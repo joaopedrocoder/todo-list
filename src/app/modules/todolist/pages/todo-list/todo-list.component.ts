@@ -8,7 +8,7 @@ import { Task } from '../../models/task.model';
 })
 export class TodoListComponent {
   tasks: Task[] = [
-    {name: "Fazer comida", descripion: "", done: false, date: new Date('Jul 12 2024')}
+    // {name: "Fazer comida", descripion: "", done: false, date: new Date('Jul 12 2024')}
   ]
 
   constructor() {}
