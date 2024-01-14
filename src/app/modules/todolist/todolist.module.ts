@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { TodolistRoutingModule } from './todolist-routing.module';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { FormsModule } from '@angular/forms';
+import { TaskComponent } from './components/task/task.component';
 
 
 @NgModule({
   declarations: [
-    TodoListComponent
+    TodoListComponent,
+    TaskComponent
   ],
   imports: [
     CommonModule,

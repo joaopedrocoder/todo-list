@@ -7,7 +7,12 @@ import { Task } from '../../models/task.model';
   styleUrl: './todo-list.component.scss'
 })
 export class TodoListComponent {
-  tasks: Task[] = []
+  tasks: Task[] = [
+    {name: "Fazer comida", descripion: "", done: false, date: new Date('Jul 12 2024')}
+  ]
   numberTasks = 0
-  done = false
+
+  deleteTask(task: Task){
+    alert(task)
+  }
 }

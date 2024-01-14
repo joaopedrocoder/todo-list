@@ -20,30 +20,6 @@
   }
 }
 
-.todo {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 1.5rem;
-  margin-bottom: 0.5rem;
-  box-sizing: border-box;
-  transition: 0.2s;
-
-  .container-icon {
-    display: flex;
-    gap: 12px;
-
-    i {
-      cursor: pointer;
-      color: $todolist-p4-color;
-    }
-
-    i:hover {
-      color: #202020;
-    }
-  }
-}
-
 .btn-plus {
   display: flex;
   align-items: center;
@@ -74,19 +50,3 @@
   color: white;
 }
 
-.container-info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  span {
-    color: $todolist-p4-color;
-    font-size: 0.75rem;
-  }
-
-}
-
-.done {
-  text-decoration: line-through;
-  text-decoration-color: $color-dark-red;
-}
