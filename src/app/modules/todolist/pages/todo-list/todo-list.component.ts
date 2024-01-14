@@ -10,9 +10,20 @@ export class TodoListComponent {
   tasks: Task[] = [
     {name: "Fazer comida", descripion: "", done: false, date: new Date('Jul 12 2024')}
   ]
-  numberTasks = 0
+
+  constructor() {}
+
+  ngOnInit(): void {
+
+  }
 
   deleteTask(task: Task){
-    alert(task)
+    alert('DELETE '+task.name)
   }
+
+  editTask(task: Task){
+    alert('EDIT '+task.name)
+  }
+
+
 }

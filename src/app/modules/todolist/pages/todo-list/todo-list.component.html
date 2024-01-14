@@ -9,7 +9,7 @@
       <div class="col">
         <div id="container-tasks">
           <i class="bi bi-check2-circle"></i>
-          <span>1 tarefa</span>
+          <span>{{tasks.length}} tarefa(s)</span>
         </div>
       </div>
     </div>
@@ -20,6 +20,7 @@
         *ngFor="let task of tasks" 
         [task]="task"
         (deleteTask)="deleteTask(task)"
+        (editTask)="editTask(task)"
       ></app-task>
     </ul>
     <ng-template #noTodo>
