@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TodolistRoutingModule } from './todolist-routing.module';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
   ],
   imports: [
     CommonModule,
-    TodolistRoutingModule
+    TodolistRoutingModule,
+    FormsModule
   ],
   exports: [TodoListComponent]
 })

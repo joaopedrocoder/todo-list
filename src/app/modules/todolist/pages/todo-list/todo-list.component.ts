@@ -9,4 +9,5 @@ import { Task } from '../../models/task.model';
 export class TodoListComponent {
   tasks: Task[] = []
   numberTasks = 0
+  done = false
 }
