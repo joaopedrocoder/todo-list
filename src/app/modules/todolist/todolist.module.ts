@@ -5,6 +5,7 @@ import { TodolistRoutingModule } from './todolist-routing.module';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { FormsModule } from '@angular/forms';
 import { TaskComponent } from './components/task/task.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TaskComponent } from './components/task/task.component';
   imports: [
     CommonModule,
     TodolistRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports: [TodoListComponent]
 })
