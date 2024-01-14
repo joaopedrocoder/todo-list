@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-todo-list',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './todo-list.component.scss'
 })
 export class TodoListComponent {
-
+  tasks: Task[] = []
+  numberTasks = 0
+  done = false
 }
