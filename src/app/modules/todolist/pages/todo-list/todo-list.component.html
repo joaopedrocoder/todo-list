@@ -1,1 +1,57 @@
-<p>todo-list works!</p>
+<div id="todo-container" class="container pt-5">
+  <section>
+    <div class="row">
+      <div class="col">
+         <h1 class="title">Hoje</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="container-tasks">
+          <i class="bi bi-check2-circle"></i>
+          <span>1 tarefa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-4">
+    <div class="row">
+      <div class="col">
+        <div class="form-check todo">
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="Fazer flexões">
+            <label class="form-check-label" for="Fazer flexões">
+              Fazer flexões
+            </label>
+          </div>
+          <div class="container-icon">
+            <i class="bi bi-pencil-square" title="editar"></i>
+            <i class="bi bi-trash3-fill" title="excluir"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-check todo">
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="fazerComida">
+            <label class="form-check-label" for="fazerComida">
+              Fazer comida
+            </label>
+          </div>
+          <div class="container-icon">
+            <i class="bi bi-pencil-square" title="editar"></i>
+            <i class="bi bi-trash3-fill" title="excluir"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-plus">
+      <span>
+        <i class="bi bi-plus"></i>
+      </span>
+      <span class="btn-title">Adiconar Tarefa</span>
+    </button>
+  </section>
+</div>
