@@ -1,0 +1,16 @@
+<li class="form-check todo">
+  <div class="container-info">
+    <div>
+      <input class="form-check-input" type="checkbox" value="" id="fazerComida" [(ngModel)]="task.done">
+      <label class="form-check-label" [ngClass]="task.done ? 'done':''" for="fazerComida">
+        {{task.name}}
+      </label>
+    </div>
+    <span *ngIf="task.descripion">{{task.descripion}}</span>
+    <span *ngIf="task.date">{{task.date}}</span>
+  </div>
+  <div class="container-icon">
+    <i class="bi bi-pencil-square" title="editar" (click)="editTask.emit()"></i>
+    <i class="bi bi-trash3-fill" title="excluir" (click)="deleteTask.emit()"></i>
+  </div>
+</li>
