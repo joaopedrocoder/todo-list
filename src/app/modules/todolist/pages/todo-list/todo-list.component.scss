@@ -73,3 +73,15 @@
   background-color: $color-red;
   color: white;
 }
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    color: $todolist-p4-color;
+    font-size: 0.75rem;
+  }
+
+}
